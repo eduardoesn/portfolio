@@ -413,6 +413,63 @@ section{
     text-align: center;
 }
 
+.portfolio {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-titulos {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  transform: translateY(-10px) scale(1.03);
+}
+
+.portfolio-caixa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--vidro);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.portfolio-imagem {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.caixa-textos-projeto {
+  padding: 1.5rem;
+}
+
+.paragrafo-portfolio {
+  color: rgba(226, 232, 240, 0.8);
+  line-height: 1.25rem;
+}
+
+.info-portfolio {
+  margin-bottom: 5px;
+  color: var(--claro);
+}
+
 .contact{
     background-color: var(--bg-color);
     flex-direction: column;
