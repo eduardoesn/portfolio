@@ -112,23 +112,22 @@ async function fetchGithubProjects() {
       card.rel = "noopener noreferrer";
       card.classList.add("portfolio-card");
 
-      // Lógica para selecionar a imagem baseada na linguagem
-      let projectImage = "./img/icons/default-icon.png"; // Imagem padrão (fallback)
+      let projectImage = "./img/icones/default-icon.png";
 
       if (repo.language) {
         switch (repo.language.toLowerCase()) {
           case "javascript":
-            projectImage = "./img/icons/js.png";
+            projectImage = "./img/icones/js.png";
             break;
           case "python":
-            projectImage = "./img/icons/python.png";
+            projectImage = "./img/icones/python.png";
             break;
           case "java":
-            projectImage = "./img/icons/java.png";
+            projectImage = "./img/icones/java.png";
             break;
           case "html":
           case "css":
-            projectImage = "./img/icons/html.png";
+            projectImage = "./img/icones/html.png";
             break;
         }
       }
@@ -143,7 +142,7 @@ async function fetchGithubProjects() {
                       " "
                     )}</h3>
                     <p class="paragrafo-portfolio">${
-                      repo.description || "Sem descrição disponível."
+                      repo.description || ""
                     }</p>
                 </div>
             `;

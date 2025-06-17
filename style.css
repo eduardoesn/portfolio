@@ -421,13 +421,14 @@ section{
 }
 
 .portfolio-titulos {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 25px;
+  font-size: clamp(4rem, 8vw, 8rem);
+    text-align: center;
+    margin-bottom: 5rem;
+    color: white;
 }
 
 .portfolio-card:hover {
-  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  box-shadow: 0 0 20px var(--main-color);
   transform: translateY(-10px) scale(1.03);
 }
 
@@ -444,7 +445,7 @@ section{
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   backdrop-filter: blur(5px);
-  border: 1px solid var(--vidro);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -461,13 +462,13 @@ section{
 }
 
 .paragrafo-portfolio {
-  color: rgba(226, 232, 240, 0.8);
-  line-height: 1.25rem;
+  color: var(--text-color);
+  line-height: 1.25;
 }
 
 .info-portfolio {
   margin-bottom: 5px;
-  color: var(--claro);
+  color: var(--main-color);
 }
 
 .contact{
